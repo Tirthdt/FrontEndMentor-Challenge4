@@ -140,7 +140,7 @@ body {
 
 @media (max-width: 700px) {
   .container {
-    max-width: 60vh;
+    max-width: 80vw;
     margin: 200px auto;
   }
   .container .card-accordion {
@@ -154,7 +154,7 @@ body {
     position: absolute;
     top: -15%;
     z-index: 2;
-    left: 18%;
+    left: 0%;
   }
   .container .card-accordion .left {
     -webkit-box-flex: 1;
@@ -167,7 +167,7 @@ body {
     width: 260px;
     height: 234px;
     position: absolute;
-    left: 21%;
+    left: 5%;
     top: -217%;
   }
   .container .card-accordion .left #woman {
