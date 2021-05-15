@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #af67e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), color-stop(97%, #6565e7));
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 97%);
+  height: auto;
+}
+
+.container {
+  max-width: 1000px;
+  height: 600px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card-accordion {
+  background: #e7e7e9;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+}
+
+.container .card-accordion #box {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  left: -10%;
+}
+
+.container .card-accordion .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .card-accordion .left #pattern {
+  display: block;
+  width: 181%;
+  height: 173%;
+  position: absolute;
+  left: -83%;
+  top: -49%;
+  overflow: hidden;
+}
+
+.container .card-accordion .left #woman {
+  position: absolute;
+  top: 13%;
+  width: 118%;
+  left: -21%;
+}
+
+.container .card-accordion .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px 20px 20px 10px;
+}
+
+.container .card-accordion .right .heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.container .card-accordion .right .item {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #4a4b5e;
+}
+
+.container .card-accordion .right .item .question {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.container .card-accordion .right .item .question-selected {
+  font-weight: 700;
+}
+
+.container .card-accordion .right .item .question:hover {
+  color: #f47c57;
+}
+
+.container .card-accordion .right .item .question .btn {
+  background: transparent;
+  float: right;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .card-accordion .right .item .question .btn img {
+  height: 10px;
+}
+
+.container .card-accordion .right .item .question .selected {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.container .card-accordion .right .item .answer {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #787887;
+  display: none;
+}
+
+.container .card-accordion .right .item .show-answer {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 60vh;
+    margin: 200px auto;
+  }
+  .container .card-accordion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 700px;
+  }
+  .container .card-accordion #box {
+    position: absolute;
+    top: -15%;
+    z-index: 2;
+    left: 18%;
+  }
+  .container .card-accordion .left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: visible;
+  }
+  .container .card-accordion .left #pattern {
+    display: block;
+    width: 260px;
+    height: 234px;
+    position: absolute;
+    left: 21%;
+    top: -217%;
+  }
+  .container .card-accordion .left #woman {
+    display: none;
+  }
+  .container .card-accordion .right {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+  }
+  .container .card-accordion .right .heading {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
